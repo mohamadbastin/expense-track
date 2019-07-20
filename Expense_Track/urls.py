@@ -15,7 +15,21 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from rest_framework.authtoken import views
+from assets.views import *
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api-token-auth/', views.obtain_auth_token),
+    path('signup/', SignUpView.as_view()),
+    path('budget/create/', BudgetCreateView.as_view()),
+    path('budget/list/', BudgetListView.as_view()),
+    path('category/create/', CategoryCreateView.as_view()),
+    path('category/list/', CategoryListView.as_view()),
+    path('expense/create/', ExpenseCreateView.as_view()),
+    path('expense/list/', ExpenseListView.as_view()),
+    path('expense/list/category/<int:pk>/', CategorySpentListView.as_view()),
+    path('expense/list/budget/<int:pk>/', BudgetSpentListView.as_view()),
+
 ]
