@@ -32,6 +32,7 @@ class SignUpView(CreateAPIView):
 
 
 class BudgetCreateView(CreateAPIView):
+    permission_classes = [IsAuthenticated]
     serializer_class = BudgetSerializer
     allowed_methods = ['POST']
 
@@ -50,11 +51,13 @@ class BudgetCreateView(CreateAPIView):
 
 
 class BudgetListView(ListAPIView):
+    permission_classes = [IsAuthenticated]
     serializer_class = BudgetSerializer
     queryset = Budget.objects.filter()
 
 
 class CategoryCreateView(CreateAPIView):
+    permission_classes = [IsAuthenticated]
     serializer_class = CategorySerializer
     allowed_methods = ['POST']
 
@@ -69,11 +72,13 @@ class CategoryCreateView(CreateAPIView):
 
 
 class CategoryListView(ListAPIView):
+    permission_classes = [IsAuthenticated]
     serializer_class = CategorySerializer
     queryset = Category.objects.all()
 
 
 class ExpenseCreateView(CreateAPIView):
+    permission_classes = [IsAuthenticated]
     serializer_class = ExpenseSerializer
     allowed_methods = ['POST']
 
@@ -112,11 +117,13 @@ class ExpenseCreateView(CreateAPIView):
 
 
 class ExpenseListView(ListAPIView):
+    permission_classes = [IsAuthenticated]
     serializer_class = ExpenseSerializer
     queryset = Expense.objects.all()
 
 
 class CategorySpentListView(ListAPIView):
+    permission_classes = [IsAuthenticated]
     serializer_class = ExpenseSerializer
 
     def get_queryset(self):
@@ -130,6 +137,7 @@ class CategorySpentListView(ListAPIView):
 
 
 class BudgetSpentListView(ListAPIView):
+    permission_classes = [IsAuthenticated]
     serializer_class = ExpenseSerializer
 
     def get_queryset(self):
