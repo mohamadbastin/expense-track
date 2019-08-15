@@ -1,3 +1,5 @@
+from pprint import pprint
+
 from django.shortcuts import render
 from rest_framework.generics import GenericAPIView, CreateAPIView, ListAPIView, RetrieveAPIView
 from rest_framework.response import Response
@@ -8,6 +10,7 @@ from django.contrib.auth.admin import User
 from .serializers import *
 # Create your views here.
 from rest_framework.permissions import IsAuthenticated
+from rest_framework.authtoken.models import Token
 
 
 # class Boz(GenericAPIView):
@@ -150,3 +153,14 @@ class BudgetSpentListView(ListAPIView):
             return None
 
 
+class TokenValidate(GenericAPIView):
+    allowed_methods = ['POST', ]
+    print(Token.objects.all())
+
+    def post(self, request, *args, **kwargs):
+        # print(request.data.get("token"))
+
+        for i in Token.objects.all():
+            if i.pk == request.data.get("token"):
+                return Response({'status': 200})
+        return Response({'status': 400})

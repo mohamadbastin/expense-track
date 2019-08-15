@@ -31,5 +31,6 @@ urlpatterns = [
     path('expense/list/', ExpenseListView.as_view()),
     path('expense/list/category/<int:pk>/', CategorySpentListView.as_view()),
     path('expense/list/budget/<int:pk>/', BudgetSpentListView.as_view()),
+    path('tokencheck/', TokenValidate.as_view())
 
 ]
