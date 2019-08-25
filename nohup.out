@@ -1,0 +1,88 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Aug 25 10:17:38 2019] ***
+compiled with version: 7.4.0 on 09 July 2019 13:31:50
+os: Linux-4.15.0-22-generic #24-Ubuntu SMP Wed May 16 12:15:17 UTC 2018
+nodename: mohamadbastin
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /var/www/expense_track
+detected binary path: /var/www/expense_track/.venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 3726
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address expense.sock fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Jan 14 2019, 11:02:34)  [GCC 8.0.1 20180414 (experimental) [trunk revision 259383]]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55be291d6c10
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72904 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55be291d6c10 pid: 28616 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 28616, cores: 1)
+Not Found: /
+[pid: 28616|app: 0|req: 1/1] 87.107.14.96 () {40 vars in 666 bytes} [Sun Aug 25 17:17:45 2019] GET / => generated 3112 bytes in 278 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /
+[pid: 28616|app: 0|req: 2/2] 87.107.14.96 () {40 vars in 666 bytes} [Sun Aug 25 17:17:56 2019] GET / => generated 3112 bytes in 17 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /
+[pid: 28616|app: 0|req: 3/3] 87.107.14.96 () {40 vars in 666 bytes} [Sun Aug 25 17:17:57 2019] GET / => generated 3112 bytes in 12 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /
+[pid: 28616|app: 0|req: 4/4] 87.107.14.96 () {40 vars in 666 bytes} [Sun Aug 25 17:19:04 2019] GET / => generated 3112 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /
+[pid: 28616|app: 0|req: 5/5] 87.107.14.96 () {40 vars in 666 bytes} [Sun Aug 25 17:19:07 2019] GET / => generated 3112 bytes in 13 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 28616|app: 0|req: 6/6] 87.107.14.96 () {40 vars in 676 bytes} [Sun Aug 25 17:19:07 2019] GET /admin => generated 0 bytes in 3 msecs (HTTP/1.1 301) 3 headers in 112 bytes (2 switches on core 0)
+[pid: 28616|app: 0|req: 7/7] 87.107.14.96 () {40 vars in 678 bytes} [Sun Aug 25 17:19:07 2019] GET /admin/ => generated 0 bytes in 60 msecs (HTTP/1.1 302) 7 headers in 265 bytes (1 switches on core 0)
+[pid: 28616|app: 0|req: 8/8] 87.107.14.96 () {40 vars in 715 bytes} [Sun Aug 25 17:19:08 2019] GET /admin/login/?next=/admin/ => generated 1819 bytes in 118 msecs (HTTP/1.1 200) 7 headers in 395 bytes (1 switches on core 0)
+[pid: 28616|app: 0|req: 9/9] 87.107.14.96 () {42 vars in 804 bytes} [Sun Aug 25 17:19:37 2019] GET /admin/login/?next=/admin/ => generated 1819 bytes in 51 msecs (HTTP/1.1 200) 7 headers in 395 bytes (2 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Aug 25 10:23:09 2019] ***
+compiled with version: 7.4.0 on 09 July 2019 13:31:50
+os: Linux-4.15.0-22-generic #24-Ubuntu SMP Wed May 16 12:15:17 UTC 2018
+nodename: mohamadbastin
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /var/www/expense_track
+detected binary path: /var/www/expense_track/.venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 3726
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address expense.sock fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Jan 14 2019, 11:02:34)  [GCC 8.0.1 20180414 (experimental) [trunk revision 259383]]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5615b437bc10
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72904 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5615b437bc10 pid: 28759 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 28759, cores: 1)
+Not Found: /
+[pid: 28759|app: 0|req: 1/1] 87.107.14.96 () {42 vars in 755 bytes} [Sun Aug 25 17:30:07 2019] GET / => generated 3112 bytes in 237 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /
+[pid: 28759|app: 0|req: 2/2] 87.107.14.96 () {42 vars in 755 bytes} [Sun Aug 25 17:30:10 2019] GET / => generated 3112 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)

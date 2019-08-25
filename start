@@ -1,0 +1,1 @@
+nohup uwsgi --socket expense.sock --module Expense_Track.wsgi --chmod-socket=666 &
